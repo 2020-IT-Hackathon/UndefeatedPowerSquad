@@ -1,13 +1,20 @@
 <link href="Style.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href = "button-demo-routing.module.ts">
+<link href = "button-demo.module.ts">
+<link href = "button-demo.page.scss">
+<link href = "button-demo.page.spec.ts">
+<link href = "manifest.json">
+<link href = "button-demo-routing.module">
+
 <title>Example</title>
 <nav>
     <img src="upslogo.png" alt="logo">
     <i class="fa fa-angle-left" style="font-size:48px;color:#fcb900"></i>
 
 </nav>
-<body>
+<body onload = "sortPackages()">
     <div class="header">
         <h1>Welcome to SWAN</h1>
 
@@ -16,4 +23,11 @@
   
             </div>
           </div>
+           <!-- Medium -->
+    <!-- <ion-item> -->
+      <ion-label class="desktop-view">Medium</ion-label>
+      <!-- </ion-item> -->
+      <ion-item class="desktop-view">
+        <ion-button class="button-primary" size="medium" id="12">Primary</ion-button>
+      </ion-item>
 </body>

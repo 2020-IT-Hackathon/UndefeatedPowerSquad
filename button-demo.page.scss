@@ -1,0 +1,18 @@
+// Demo layout purposes only
+// TODO: replace with flex
+ion-button {
+    &[expand]{
+        width: 50%;
+    }
+}
+
+.mobile-view { display:  none }
+@media screen and (max-width: 48em) {
+    .desktop-view { display: none; }
+    .mobile-view { display: inherit; }
+}
+
+ion-item {
+    --inner-padding-bottom: 0.625em;
+    --inner-padding-top: 0.625em;
+}
