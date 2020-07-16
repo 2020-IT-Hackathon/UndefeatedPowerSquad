@@ -59,13 +59,14 @@
     display: flex;
 }
 .box {
-    background: yellow;
+    background: yellowgreen;
     margin: 5px;
     color: white;
     font-weight: bold;
     flex: 1 0 auto;
     height: 100px;
     width: 100 px;
+    visibility: hidden;
 }
 .box:after {
     content: "";
@@ -84,8 +85,11 @@
     justify-content: center;
 }
 .blue-square {
-  background-color: yellow;
+  background-color: yellowgreen;
   width: 100px;
+  color: white;
+  font-weight: bold;
   height: 100px;
   display: inline-block;
+  visibility: hidden;
 }
