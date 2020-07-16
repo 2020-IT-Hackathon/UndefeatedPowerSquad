@@ -6,7 +6,7 @@ function packages() {
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
-  }
+}
 
 var newpackage = new packages();
 
@@ -44,12 +44,15 @@ function plzwork() {
     if((newpackage.packageNumber<200) && (newpackage.packageNumber>=100)){
         document.getElementById('first').style.visibility = "visible";
     }
-    else{
+    else {
         document.getElementById('first').style.visibility = "hidden";
 
     }
-    if((newpackage.packageNumber<300) && (newpackage.packageNumber>=200)){
+
+
+   if ((newpackage.packageNumber<300) && (newpackage.packageNumber>=200)){
         document.getElementById('second').style.visibility = "visible";
+
     }
     else{
         document.getElementById('second').style.visibility = "hidden";
