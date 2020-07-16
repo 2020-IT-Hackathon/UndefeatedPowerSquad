@@ -22,6 +22,7 @@
   }
   /*better text alignment in the center*/
 
+        
   .content {
     display: flex;
     flex-direction: row;
@@ -37,3 +38,14 @@
   header, footer, article, nav {
     padding: 1em;
   }
+
+  body {
+    font-family: sans-serif;
+  }
+  #container {
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+  }
+
