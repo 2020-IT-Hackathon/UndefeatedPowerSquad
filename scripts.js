@@ -30,6 +30,18 @@ else {
 
     console.log(newpackage.packageNumber);
     } 
+
+    if (newpackage.packageNumber>700){
+        console.log("Bottom of the truck ")
+    }
+    else{
+        console.log("Normal package")
+    }
 /*}*/
+
+if(newpackage.packageNumber<100){
+    var elem = document.getElementById('first');
+    elem.visibility = true;
+}
 
 
