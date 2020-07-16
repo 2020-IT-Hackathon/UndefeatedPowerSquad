@@ -1,0 +1,39 @@
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  img{
+    position:absolute;
+    left:110px;
+    top:5px;
+    width: 70px;
+  }
+  .header {
+    height: 100px;
+    width: 100%;    
+    background-color: #351c15;
+    text-align: center;
+    color: #F6C043;
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+  }
+  /*better text alignment in the center*/
+
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 4;
+    min-height: 60vh;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav {
+    padding: 1em;
+  }
