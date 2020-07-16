@@ -9,22 +9,23 @@ function getRandomInt(max) {
   }
 
 var newpackage = new packages();
-/*function pleasewrk(){*/
+
+function plzwork() {
     newpackage.packageType = getRandomInt(2);
     console.log(newpackage.packageType);
     newpackage.packageWeight = getRandomInt(200);
     console.log(newpackage.packageWeight);
-if((newpackage.packageType != 3) && (newpackage.packageWeight<100)) {
+    if((newpackage.packageType != 3) && (newpackage.packageWeight<100)) {
         var hunds = getRandomInt(6);
         var ones = getRandomInt(4);
         var total = (hunds * 100) + ones;
         if(total<100){
-        total = total+100;
+            total = total+100;
         }
-        newpackage.packageNumber = total; 
-        console.log(newpackage.packageNumber);
+    newpackage.packageNumber = total; 
+    console.log(newpackage.packageNumber);
     }
-else {
+    else {
     var hunds = getRandomInt(2);
         var ones = getRandomInt(4);
         var total = ((hunds+7) * 100) + ones;
@@ -39,64 +40,64 @@ else {
     else{
         console.log("Normal package")
     }
-/*}*/
 
+    if((newpackage.packageNumber<200) && (newpackage.packageNumber>=100)){
+        document.getElementById('first').style.visibility = "visible";
+    }
+    else{
+        document.getElementById('first').style.visibility = "hidden";
 
+    }
+    if((newpackage.packageNumber<300) && (newpackage.packageNumber>=200)){
+        document.getElementById('second').style.visibility = "visible";
+    }
+    else{
+        document.getElementById('second').style.visibility = "hidden";
 
-if((newpackage.packageNumber<200) && (newpackage.packageNumber>=100)){
-    document.getElementById('first').style.visibility = "visible";
-}else{
-    document.getElementById('first').style.visibility = "hidden";
+    }
 
-}
-if((newpackage.packageNumber<300) && (newpackage.packageNumber>=200)){
-    document.getElementById('second').style.visibility = "visible";
-}else{
-    document.getElementById('second').style.visibility = "hidden";
+    if((newpackage.packageNumber<400) && (newpackage.packageNumber>=300)){
+        document.getElementById('third').style.visibility = "visible";
+    }
+    else{
+        document.getElementById('third').style.visibility = "hidden";
 
-}
+    }
 
-if((newpackage.packageNumber<400) && (newpackage.packageNumber>=300)){
-    document.getElementById('third').style.visibility = "visible";
-}
-else{
-    document.getElementById('third').style.visibility = "hidden";
+    if((newpackage.packageNumber<500) && (newpackage.packageNumber>=400)){
+        document.getElementById('fourth').style.visibility = "visible";
+    }
+    else{
+        document.getElementById('fourth').style.visibility = "hidden";
 
-}
+    }
+    if((newpackage.packageNumber<600) && (newpackage.packageNumber>=500)){
+        document.getElementById('fifth').style.visibility = "visible";
+    }
+    else{
+        document.getElementById('fifth').style.visibility = "hidden";
 
-if((newpackage.packageNumber<500) && (newpackage.packageNumber>=400)){
-    document.getElementById('fourth').style.visibility = "visible";
-}
-else{
-    document.getElementById('fourth').style.visibility = "hidden";
+    }
+    if((newpackage.packageNumber<700) && (newpackage.packageNumber>=600)){
+        document.getElementById('sixth').style.visibility = "visible";
+    }
+    else{
+        document.getElementById('sixth').style.visibility = "hidden";
 
-}
-if((newpackage.packageNumber<600) && (newpackage.packageNumber>=500)){
-    document.getElementById('fifth').style.visibility = "visible";
-}
-else{
-    document.getElementById('fifth').style.visibility = "hidden";
+    }
 
-}
-if((newpackage.packageNumber<700) && (newpackage.packageNumber>=600)){
-    document.getElementById('sixth').style.visibility = "visible";
-}
-else{
-    document.getElementById('sixth').style.visibility = "hidden";
+    if((newpackage.packageNumber<800) && (newpackage.packageNumber>=700)){
+        document.getElementById('seventh').style.visibility = "visible";
+    }
+    else{
+        document.getElementById('seventh').style.visibility = "hidden";
 
-}
+    }
+    if(newpackage.packageNumber>=800){
+        document.getElementById('eighth').style.visibility = "visible";
+    }
+    else{
+        document.getElementById('eighth').style.visibility = "hidden";
 
-if((newpackage.packageNumber<800) && (newpackage.packageNumber>=700)){
-    document.getElementById('seventh').style.visibility = "visible";
-}
-else{
-    document.getElementById('seventh').style.visibility = "hidden";
-
-}
-if(newpackage.packageNumber>=800){
-    document.getElementById('eighth').style.visibility = "visible";
-}
-else{
-    document.getElementById('eighth').style.visibility = "hidden";
-
+    }
 }
