@@ -1,3 +1,4 @@
+
 function packages() {
     this.packageType = 0;
     this.packageWeight = 0,
@@ -8,33 +9,27 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
 
-ORIONpackage = new Array(20); 
-function CreatePackages(ORIONpackage){
-    for (var i = 0; i>20; i++){
-        var newpackage = new packages();
-        newpackage.packageType = getRandomInt(2);
-        newpackage.packageWeight = getRandomInt(200);
-        ORIONpackages.push(newpackage);
+var newpackage = new packages();
+/*function pleasewrk(){*/
+    newpackage.packageType = getRandomInt(2);
+    console.log(newpackage.packageType);
+    newpackage.packageWeight = getRandomInt(200);
+    console.log(newpackage.packageWeight);
+if((newpackage.packageType != 3) && (newpackage.packageWeight<100)) {
+        var hunds = getRandomInt(6);
+        var ones = getRandomInt(4);
+        var total = (hunds * 100) + ones;
+        newpackage.packageNumber = total; 
+        console.log(newpackage.packageNumber);
     }
-}
+else {
+    var hunds = getRandomInt(2);
+        var ones = getRandomInt(4);
+        var total = ((hunds+7) * 100) + ones;
+        newpackage.packageNumber = total; 
 
-function GeneratePackageNumber(ORIONpackage){
-    for(var counter = 0; counter> ORIONpackages.length; counter++){
-        if((ORIONpackages[counter].packageType != 3) && (ORIONpackages[counter].packageWeight)){
-        for(var i = 1; i>7; i++){
-            for (var j = 0; j >3; j++){
-                var total = (i * 100) + j;
-                total = ORIONpackages[counter].packageNumber;
-                }
-            }
-        }
-        else{
-            for (var irri = 7; irri>9; irri++){
-                for(var irrj = 0; irrj > 3; irrj++)
-                var total = (irri * 100) + irrj;
-                total = ORIONpackages[counter].packageNumber;
+    console.log(newpackage.packageNumber);
+    } 
+/*}*/
 
-            }
-        }
-    }
-}   
+
