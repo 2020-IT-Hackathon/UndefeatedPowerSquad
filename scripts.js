@@ -11,7 +11,7 @@ function getRandomInt(max) {
 var newpackage = new packages();
 
 function plzwork() {
-    newpackage.packageType = getRandomInt(2);
+    newpackage.packageType = getRandomInt(3);
     console.log(newpackage.packageType);
     newpackage.packageWeight = getRandomInt(200);
     console.log(newpackage.packageWeight);
@@ -104,13 +104,14 @@ function plzwork() {
 
     }
 
-    if(newpackage.packageType = 0){
-        console.log("Envolope with a weight of " + newpackage.packageWeight+ " with an ID Number of " +  + newpackage.packageNumber);
+    var sectionnumber = Math.floor((newpackage.packageNumber/100));
+    if(newpackage.packageType == 0){
+        document.getElementById("p").innerHTML = "Envelope with a weight of " + newpackage.packageWeight+ " lbs. ID number equal to " +  + newpackage.packageNumber + ". Go to section " + sectionnumber;
     }
-    else if(newpackage.packageType = 1){
-    console.log("Regular sized package " + newpackage.packageWeight + " with an ID Number of " +  + newpackage.packageNumber);
+    else if(newpackage.packageType == 1){
+        document.getElementById("p").innerHTML ="Regular sized package with a weight of " + newpackage.packageWeight + "lbs. ID number equal to " +  + newpackage.packageNumber + ". Go to section " + sectionnumber;
     }
     else {
-        console.log("Irregular sized package " + newpackage.packageWeight+ " with an ID Number of " +  + newpackage.packageNumber)
+        document.getElementById("p").innerHTML ="Irregular sized package with a weight of " + newpackage.packageWeight+ "lbs. ID number equal to " +  + newpackage.packageNumber+ ". Go to section " + sectionnumber;
     }
 }

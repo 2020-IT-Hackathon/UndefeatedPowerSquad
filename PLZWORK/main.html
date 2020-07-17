@@ -1,5 +1,4 @@
 <link href="style.css" rel="stylesheet">
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
@@ -10,20 +9,16 @@
 <title>SWAN</title>
 
 <body>
+    
     <ion-app>
-    <nav>
-            <img src="upslogo.png" alt="logo"  style="z-index:100; position: fixed;">
-        </nav>
-        <div class="wrapper">
-            <div class = "ihatelife">Welcome to SWAN</div>
-            <ion-item lines="none">
-                <ion-toggle (ionChange)="onClick($event)" slot="end"></ion-toggle>
-                <ion-spinner></ion-spinner>
-
-              </ion-item>
-        </div>
-
-
+        <ion-toolbar color = "tertiary">
+            <ion-navbar >
+                <i class="fa fa-angle-left" style="font-size:48px;color:#fcb900"></i>
+            </ion-navbar>
+            
+            <ion-title > <img src="upslogo.png" alt="logo" style="font-size: 90px"> Welcome to SWAN</ion-title>
+        </ion-toolbar>
+        
             <div id="container">
              <ion-grid>
                 <div class="thisrow">
@@ -45,8 +40,14 @@
             </ion-grid>   
             </div>
 
-            <p id = "p"> </p>
+            
             <ion-button onclick="plzwork()"> NEXT</ion-button>
-        </ion-app>
-    </body>
+    </ion-app>
+    
+</body>
 
+
+
+
+https://ionicframework.com/docs/api/toolbar
+https://ionicframework.com/docs/api/toolbar#css-custom-properties 

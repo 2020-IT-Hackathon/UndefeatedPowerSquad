@@ -1,33 +1,31 @@
-:root {
-  --ion-color-favorite: #351C15;
-  --ion-color-favorite-rgb: 105,187,123;
-  --ion-color-favorite-contrast: #ffffff;
-  --ion-color-favorite-contrast-rgb: 255,255,255;
-  --ion-color-favorite-shade: #5ca56c;
-  --ion-color-favorite-tint: #78c288;
-}
-.ion-toolbar{
-color: "favorite";
-font-family: 'Lato-Light';
-font-size: 100px;
-}
-.ion-title{
-  font-family:  Helvetica, sans-serif;
-  size: 100px;
-}
+
 img{
   width: 70px;
+  left: auto;
 }
 .wrapper {
-  height: 100px;
-  width: 60%;    
+  position: absolute;
+  top: 0px;
+  height: 85px;
+  width: 100%;    
   background-color: #351c15;
   text-align: center;
   color: #F6C043;
-  font-size: 30px;
-  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  font-family: sans-serif;
 }
-
+.ihatelife{
+  padding-top: 9px;
+  font-size: 50px;
+  font-family: fantasy;
+  font-weight: 30;
+}
+p{
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #351c15;
+  margin: 0 auto;
+}
 
 .content {
   display: flex;
@@ -40,13 +38,14 @@ img{
 
 body {
   font-family: sans-serif;
+  position: absolute;
 }
 #container {
-  display: flex;
   width: 500px;
   height: 600px;
-  top: 1300px;
   margin: 0 auto;
+  position: relative;
+  top: 50px;
   border: 2px solid #ccc;
 }
 
@@ -69,9 +68,11 @@ body {
 background-color: yellowgreen;
 width: 100px;
 text-align: center;
+text-decoration: currentColor;
 color: white;
 font-weight: bold;
 margin: 0 auto;
 height: 100px;
 visibility: hidden;
 }
+
