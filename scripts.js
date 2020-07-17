@@ -16,7 +16,7 @@ function plzwork() {
     newpackage.packageWeight = getRandomInt(200);
     console.log(newpackage.packageWeight);
     if((newpackage.packageType != 3) && (newpackage.packageWeight<100)) {
-        var hunds = getRandomInt(6);
+        var hunds = getRandomInt(7);
         var ones = getRandomInt(4);
         var total = (hunds * 100) + ones;
         if(total<100){
