@@ -103,4 +103,14 @@ function plzwork() {
         document.getElementById('eighth').style.visibility = "hidden";
 
     }
+
+    if(newpackage.packageType = 0){
+        console.log("Envolope with a weight of " + newpackage.packageWeight+ " with an ID Number of " +  + newpackage.packageNumber);
+    }
+    else if(newpackage.packageType = 1){
+    console.log("Regular sized package " + newpackage.packageWeight + " with an ID Number of " +  + newpackage.packageNumber);
+    }
+    else {
+        console.log("Irregular sized package " + newpackage.packageWeight+ " with an ID Number of " +  + newpackage.packageNumber)
+    }
 }
