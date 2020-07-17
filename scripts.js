@@ -12,9 +12,9 @@ var newpackage = new packages();
 
 function plzwork() {
     newpackage.packageType = getRandomInt(3);
-    console.log(newpackage.packageType);
+    console.log("The package type is " + newpackage.packageType);
     newpackage.packageWeight = getRandomInt(200);
-    console.log(newpackage.packageWeight);
+    console.log("The package weight is " + newpackage.packageWeight);
     if((newpackage.packageType != 3) && (newpackage.packageWeight<100)) {
         var hunds = getRandomInt(7);
         var ones = getRandomInt(4);
@@ -23,7 +23,7 @@ function plzwork() {
             total = total+100;
         }
     newpackage.packageNumber = total; 
-    console.log(newpackage.packageNumber);
+    console.log("This package number is " + newpackage.packageNumber);
     }
     else {
     var hunds = getRandomInt(2);
@@ -31,7 +31,7 @@ function plzwork() {
         var total = ((hunds+7) * 100) + ones;
         newpackage.packageNumber = total; 
 
-    console.log(newpackage.packageNumber);
+    console.log("The package number is " + newpackage.packageNumber);
     } 
 
     if (newpackage.packageNumber>700){
@@ -114,4 +114,6 @@ function plzwork() {
     else {
         document.getElementById("p").innerHTML ="Irregular sized package with a weight of " + newpackage.packageWeight+ "lbs. ID number equal to " +  + newpackage.packageNumber+ ". Go to section " + sectionnumber;
     }
+    console.log("-------------------------------------------");
+
 }

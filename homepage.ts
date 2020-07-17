@@ -1,3 +1,5 @@
+declare var plzwork: any;
+
 onClick(event){
     let systemDark = window.matchMedia("(prefers-color-scheme: dark)");
     systemDark.addListener(this.colorTest);
