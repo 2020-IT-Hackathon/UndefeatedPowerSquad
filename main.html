@@ -13,9 +13,21 @@
     <ion-app>
     <nav>
             <img src="upslogo.png" alt="logo"  style="z-index:100; position: fixed;">
+            
         </nav>
         <div class="wrapper">
             <div class = "ihatelife">Welcome to SWAN</div>
+            <ion-item>
+                <ion-label >Which Truck Would You Like to Load?</ion-label>
+                <ion-select placeholder="Select One">
+                  <ion-select-option value="Truck 1">Truck 1</ion-select-option>
+                  <ion-select-option value="Truck 2">Truck 2</ion-select-option>
+                  <ion-select-option value="Truck 3">Truck 3</ion-select-option>
+                  <ion-select-option value="Truck 4">Truck 4</ion-select-option>
+                </ion-select>
+              </ion-item>
+
+
             <ion-item lines="none">
                 <ion-toggle (ionChange)="onClick($event)" slot="end"></ion-toggle>
                 <ion-spinner></ion-spinner>
