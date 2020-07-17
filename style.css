@@ -1,18 +1,33 @@
+:root {
+  --ion-color-favorite: #351C15;
+  --ion-color-favorite-rgb: 105,187,123;
+  --ion-color-favorite-contrast: #ffffff;
+  --ion-color-favorite-contrast-rgb: 255,255,255;
+  --ion-color-favorite-shade: #5ca56c;
+  --ion-color-favorite-tint: #78c288;
+}
+.ion-toolbar{
+color: "favorite";
+font-family: 'Lato-Light';
+font-size: 100px;
+}
+.ion-title{
+  font-family:  Helvetica, sans-serif;
+  size: 100px;
+}
 img{
   width: 70px;
 }
 .wrapper {
   height: 100px;
-  width: 100%;    
+  width: 60%;    
   background-color: #351c15;
   text-align: center;
   color: #F6C043;
   font-size: 30px;
   font-family: Helvetica, sans-serif;
 }
-.ion-toolbar{
-background-color: #351c15;
-}    
+
 
 .content {
   display: flex;
@@ -29,7 +44,7 @@ body {
 #container {
   display: flex;
   width: 500px;
-  height: 540px;
+  height: 600px;
   top: 1300px;
   margin: 0 auto;
   border: 2px solid #ccc;
